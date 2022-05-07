@@ -15,7 +15,7 @@
     <h1>URL Shortener Microservice</h1>
     <main>
       <section>
-        <form action="api/shorturl" method="POST">
+        <form action="api/shorturl" method="POST" onsubmit="handleSubmit">
           <fieldset>
             <legend>URL Shortener</legend>
             <label for="url_input">URL:</label>
@@ -28,5 +28,11 @@
     <footer>
       <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
     </footer>
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault()
+        console.log('Submiting')
+      }
+    </script>
   </body>
 </html>
